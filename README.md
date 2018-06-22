@@ -1,6 +1,9 @@
 # Employee-paySlip
+
 Employee payslip for a flexible pay cycle
+
 When a user input’s the employee's details: first name, last name, annual salary (natural numbers) and super rate (0% - 12% inclusive), payment start date, the program should generate payslip information with name, pay period, gross income, income tax, net income and superannuation .
+
 The calculation details will be the following:
   1. pay period = per calendar month
   2. gross income = annual salary / 12 months
@@ -42,3 +45,8 @@ Tushar,Shyoran,60050,9%,01 March – 31 March
 Output (name, pay-period, gross-income, income-tax, net-income, super-amount)
 
 Tushar Shyoran,01 March – 31 March,5004,922,4082,450
+
+# How to run code :
+- Run "npm install" in the extracted folder
+
+- Run "npm start" in the terminal 
