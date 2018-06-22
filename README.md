@@ -10,6 +10,7 @@ The calculation details will be the following:
 
 Notes: All calculation results should be rounded to the whole dollar. If >= 50 cents round up to the next dollar increment, otherwise round down.
 The following rates for 2017-18 apply from 1 July 2017 (The tax table is from ATO: https://www.ato.gov.au/Rates/Individual-income-tax-rates)
+
 0 - $18,200 Nil
 $18,201 - $37,000 19c for each $1 over $18,200
 $37,001 - $87,000 $3,572 plus 32.5c for each $1 over $37,000
