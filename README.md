@@ -22,16 +22,23 @@ $87,001 - $180,000 $19,822 plus 37c for each $1 over $87,000
 $180,001 and over $54,232 plus 45c for each $1 over $180,000
 
 Example Data :
+
 Example Data Employee annual salary is 60,050, super rate is 9%, how much will this employee be paid for the month of March ?
 
 pay period = Month of March (01 March to 31 March)
+
 gross income = 60,050 / 12 = 5,004.16666667 (round down) = 5,004
+
 income tax = (3,572 + (60,050 - 37,000) x 0.325) / 12 = 921.9375 (round up) = 922
+
 net income = 5,004 - 922 = 4,082
+
 super = 5,004 x 9% = 450.36 (round down) = 450
 
 Input (first name, last name, annual salary, super rate (%), payment start date):
+
 Tushar,Shyoran,60050,9%,01 March – 31 March
 
 Output (name, pay-period, gross-income, income-tax, net-income, super-amount)
+
 Tushar Shyoran,01 March – 31 March,5004,922,4082,450
