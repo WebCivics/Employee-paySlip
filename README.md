@@ -50,3 +50,6 @@ Tushar Shyoran,01 March – 31 March,5004,922,4082,450
 - Run "npm install" in the extracted folder
 
 - Run "npm start" in the terminal 
+
+# Testing
+- Run "npm test" 
