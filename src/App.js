@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import Employee from './Employee/employee';
 import './App.css';
-import { Route, Switch,withRouter } from 'react-router-dom';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Calculatetaxes from './TaxCalculator/calculatetaxes';
 
 class App extends Component {
   render() {
 
     let routes = (
+      <Router>
       <Switch >
         <Route path="/" exact component={Employee} />
         <Route path="/pay-slip" exact component={Calculatetaxes} />
-       </Switch> 
+       </Switch>
+      </Router>
     );
 
     
@@ -25,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default withRouter(App);
+export default App;
