@@ -1,8 +1,8 @@
 import React from 'react';
 
-const input = ( props ) => {
+const input = (props) => {
     let inputElement = null;
-    
+
     const inputStyle = {
         outline: 'none',
         border: '1px solid #ccc',
@@ -12,10 +12,10 @@ const input = ( props ) => {
         display: 'block',
         width: '100%',
         boxsizing: 'border-box'
-   } 
+    }
 
-    switch ( props.elementType ) {
-        case ( 'input' ):
+    switch (props.elementType) {
+        case ('input'):
             inputElement = <input style={inputStyle}
                 {...props.elementConfig}
                 value={props.value}
@@ -26,7 +26,7 @@ const input = ( props ) => {
                 {...props.elementConfig}
                 value={props.value}
                 onChange={props.changed} />;
-    }
+            }
 
     return (
         <div style={{
