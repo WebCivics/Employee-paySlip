@@ -14,14 +14,10 @@ class App extends Component {
         <Route path="/pay-slip" exact component={Calculatetaxes} />
        </Switch>
       </Router>
-    );
-
-    
+    );   
     return (
-      <div>
-        
+      <div>  
         {routes}
-      
       </div>
     );
   }
