@@ -68,15 +68,15 @@ class EmpForm extends Component {
         const updatedOrderForm = {
             ...this.state.formData
         };
-        const updatedFormElement = { 
+        const updatedFormElement = {
             ...updatedOrderForm[inputIdentifier]
         };
         updatedFormElement.value = event.target.value;
         updatedOrderForm[inputIdentifier] = updatedFormElement;
-        this.setState({formData: updatedOrderForm});
+        this.setState({ formData: updatedOrderForm });
     }
 
-    render(){
+    render() {
         const formElementsArray = [];
         for (let key in this.state.formData) {
             formElementsArray.push({
@@ -88,26 +88,25 @@ class EmpForm extends Component {
         let form = (
             <form onSubmit={this.handleSubmit}>
                 {formElementsArray.map(formElement => (
-                    <Input 
+                    <Input
                         key={formElement.id}
                         elementType={formElement.config.elementType}
                         elementConfig={formElement.config.elementConfig}
                         value={formElement.config.value}
                         changed={(event) => this.inputChangedHandler(event, formElement.id)} />
                 ))}
-               <button style={{
-                   cursor: 'pointer',
-                   font: 'inherit',
-                   padding: '10px',
-                   margin: '10px 100px',
-                   fontweight: 'bold'
-               }}>Submit</button>
+                <button style={{
+                    cursor: 'pointer',
+                    font: 'inherit',
+                    padding: '10px',
+                    margin: '10px 100px',
+                    fontweight: 'bold'
+                }}>Submit</button>
             </form>
         );
 
-        return(
+        return (
             <div style={{
-                
                 margin: '20px auto',
                 width: '80%',
                 textalign: 'center',
@@ -116,11 +115,11 @@ class EmpForm extends Component {
                 padding: '40px',
                 boxsizing: 'border-box',
             }}>
-                <h3 style={{color: 'brown', padding:'20px', margin:'auto 50px'}}>Employee Payslip:</h3>
-                {form}  
+                <h3 style={{ color: 'brown', padding: '20px', margin: 'auto 50px' }}>Employee Payslip:</h3>
+                {form}
             </div>
         );
-      
+
     }
 }
 
