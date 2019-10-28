@@ -1,0 +1,39 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+  prefix="
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    sec: https://w3id.org/security#
+    xsd: http://www.w3.org/2001/XMLSchema#
+    dct: http://purl.org/dc/terms/
+    ato: http://payslips.ato.gov.au/"
+  >
+  <div typeof="rdfs:Resource">
+    <div rel="schema:claim">
+      <div typeof="rdfs:Resource" about="did:asic:298347982739">
+        <div property="ato:tfn" content="did:atoTFN:123456789"></div>
+        <div rel="ato:eidentifier" resource="did:nab:93753829747"></div>
+        <div property="ato:startdate" datatype="xsd:dateTime" content="2019-09-27T06:09:29+00:00"></div>
+        <div property="ato:enddate" datatype="xsd:dateTime" content="2019-10-27T06:09:29+00:00"></div>
+        <div property="ATO:grossamount" datatype="xsd:float">899</div>
+        <div property="ATO:taxwithheld" datatype="xsd:float">200</div>
+        <div property="ATO:grossamount" datatype="xsd:float">899</div>
+        <div property="ATO:SuperannuationPaid" datatype="xsd:float">99</div>
+        <div rel="ato:SuperAccountID" resource="did:ato:937532349747"></div>
+        <div property="ATO:Allowances" datatype="xsd:float">50</div>
+
+      </div>
+    </div>
+    <div rel="sec:signature">
+      <div typeof="sec:LinkedDataSignature2015">
+        <div property="sec:nonce" content="27ef57f8"></div>
+        <div property="sec:signatureValue" content="twHvCKzzPd3tXM6R3DIw1zxZsh5kqWVQS25PTm4Ak477M08CAxyDPJfXLFzCW8af2V2j9SBnr7eue0Ip/OL4iY4fEcNxurdzE0ak2hqTbgX2qiuZTN4U9xaQIAdpc9itdZOsqMStIHLZ6ulRSWGXpAA+n8HSoVebu8lb6xfYqDo="></div>
+        <div rel="dct:creator" resource="https://eid.ato.gov.au/acmiinc/keys/1"></div>
+        <div property="sec:domain" content="payroll.acmiinc.com.au"></div>
+        <div property="dct:created" datatype="xsd:dateTime" content="2019-10-27T06:09:29+00:00"></div>
+      </div>
+    </div>
+  </div>
+  <div typeof="rdfs:Resource" about="did:ato:93753829747">
+    <div property="ato:payslip" content="acmi inc"></div>
+  </div>
+</div>
